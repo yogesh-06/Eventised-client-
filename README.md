@@ -34,7 +34,7 @@
 
 👉 http://localhost:3000
 
-## Demo / Screenshots
+## Demo / Screenshots [check deployed aite ]
 
 - 🏠 Home Page (Upcoming Events) with Register Modal
 - 📄 Event Details, Attendees List
