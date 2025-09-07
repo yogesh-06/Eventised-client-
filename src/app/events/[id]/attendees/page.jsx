@@ -8,7 +8,7 @@ import { useParams } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Loader2Icon, MapPin } from "lucide-react";
 
-const page = ({}) => {
+const Page = ({}) => {
   const params = useParams();
   const eventId = params?.id;
   const [attendees, setAttendees] = useState([]);
@@ -117,4 +117,4 @@ const page = ({}) => {
   }
 };
 
-export default page;
+export default Page;
