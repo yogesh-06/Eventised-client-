@@ -46,9 +46,9 @@ export function AppSidebar() {
           <SidebarContent>
             <SidebarGroup>
               <SidebarGroupLabel className="flex justify-between items-center">
-                <a href="/" className="text-red-500 text-2xl ">
+                <Link href="/" className="text-red-500 text-2xl ">
                   E-<span className="text-black text-lg">ventised</span>
-                </a>{" "}
+                </Link>{" "}
                 {/* <SidebarTrigger /> */}
               </SidebarGroupLabel>
               <SidebarGroupContent>
