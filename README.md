@@ -1,7 +1,8 @@
 # Eventised - Client
 
-Eventised is a simple event management app frontend built with **Next.js**, **Shadcn UI**, and **Tailwind CSS**.  
-Users can view upcoming events, check details, and register. Admins can create and manage events with search, sorting, and pagination.
+- https://eventised-client-vsoo.vercel.app/
+  Eventised is a simple event management app frontend built with **Next.js**, **Shadcn UI**, and **Tailwind CSS**.  
+  Users can view upcoming events, check details, and register. Admins can create and manage events with search, sorting, and pagination.
 
 ## Features
 
@@ -46,7 +47,7 @@ Users can view upcoming events, check details, and register. Admins can create a
 This client connects to the Eventised Server (Node.js/Express + MongoDB).
 Server repo - https://github.com/yogesh-06/Eventised-server.git
 
-## Notes
+## Assumptions
 
 ### Framework Choice
 
@@ -62,3 +63,25 @@ The job description allows similar frameworks and mentions MongoDB as acceptable
 - **API Endpoints**: Includes creating events, registering attendees, and fetching attendees for specific events.
 - **Validations**: Checks for maximum capacity and prevents duplicate registrations.
 - **Frontend**: Fully responsive UI built with Next.js + Shadcn UI, including an admin panel.
+
+## Pages
+
+- **BASE_URL** = https://eventised-client-vsoo.vercel.app/
+
+1. HomePage - https://eventised-client-vsoo.vercel.app/
+   - upcoming events listing
+   - Register Attendee modal
+   - onClick of Attendee's count, redirects to EventDetails page.
+2. EventDetails -events/{**_eventID_**}/attendees
+   - Attendees list for that specific event
+3. Admin Events - /admin/events
+   - All Events Listing. [passed, ongoing, upcoming]
+   - onClick CreateEvent Opens Modal
+   - Search based on event name,
+   - server side Pagination
+   - sorting
+4. Admin Attendees - /admin/attendees
+   - All Attendees listing
+   - Search based on event email,
+   - Server side Pagination
+   - sorting
